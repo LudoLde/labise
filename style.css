@@ -1,0 +1,313 @@
+/********************** TYPOGRAPHIE **************************/
+
+@font-face {
+   font-family: "lobster";
+   src: url("./police/lobster_1.3-webfont.woff2") format("woff2"), url("./police/lobster_1.3-webfont.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "montserratbold";
+   src: url("./police/montserrat-bold-webfont.woff2") format("woff2"), url("./police/montserrat-bold-webfont.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "montserratregular";
+   src: url("./police/montserrat-regular-webfont.woff2") format("woff2"), url("./police/montserrat-regular-webfont.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+}
+/*************************     HEADER     *************************/
+
+header {
+   position: relative;
+   display: flex;
+}
+#header-img {
+   z-index: 2;
+   position: relative;
+   width: 100%;
+   height: 645px;
+}
+#header-title {
+   position: absolute;
+   z-index: 2;
+   font-family: "lobster", sans-serif;
+   font-size: 93px;
+   margin: 13px 0px 0px 34px;
+}
+#header-nav {
+   position: absolute;
+   z-index: 2;
+   right: 61px;
+   width: 34%;
+   top: 35px;
+}
+#header-ul {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+}
+.header-links {
+   font-family: "montserratregular", sans-serif;
+   text-decoration: none;
+   color: white;
+   font-size: 24px;
+   font-weight: bold;
+   text-shadow: 0px -2px black;
+}
+.header-para {
+   position: absolute;
+   z-index: 2;
+   top: 196px;
+   left: 500px;
+   font-size: 79px;
+   font-family: "lobster";
+   color: white;
+   text-align: center;
+   width: 449px;
+}
+
+/********* FIRST SECTION  ***************/
+
+#first-section {
+   padding: 100px 88px 100px 88px;
+   display: flex;
+   justify-content: space-between;
+}
+.first-section-title {
+   width: 309px;
+   font-family: "lobster";
+   font-size: 49px;
+   color: #003a13;
+   margin: 15px 0px 0px 0px;
+}
+.first-section-para {
+   width: 646px;
+   font-family: "montserratregular";
+   font-size: 25px;
+   color: #003a13;
+}
+.first-section-para-bold {
+   font-family: "montserratbold";
+}
+.first-section-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 218px;
+   height: 50px;
+   background: #ffa08a;
+   border: none;
+   color: white;
+   font-family: "montserratbold";
+   border-radius: 100px;
+   font-size: 18px;
+}
+.arrow {
+   align-self: center;
+   height: 16px;
+   padding-left: 7px;
+}
+
+/****************** SECOND SECTION ************************/
+
+#second-section {
+   display: flex;
+   justify-content: center;
+   margin: 45px 0px;
+}
+.second-section-div-green {
+   display: flex;
+   flex-direction: column;
+   width: 380px;
+   height: 486px;
+   padding: 30px;
+   background-color: #003b30;
+}
+.second-section-title {
+   font-size: 41px;
+   width: 252px;
+   line-height: 39px;
+   color: white;
+   font-family: "lobster";
+   margin: 10px 0px 9px 0px;
+}
+.second-section-para {
+   color: white;
+   font-family: "montserratregular";
+   font-size: 17px;
+   width: 327px;
+   height: 293px;
+}
+.second-section-button {
+   align-self: center;
+   width: 173px;
+   height: 53px;
+   border: white 3px solid;
+   border-radius: 15px;
+   background-color: #003b30;
+   color: white;
+}
+.second-section-div-orange {
+   display: flex;
+   flex-direction: column;
+   width: 380px;
+   height: 486px;
+   padding: 30px;
+   background-color: #ffa08a;
+}
+.second-section-button-orange {
+   align-self: center;
+   width: 173px;
+   height: 53px;
+   border: white 3px solid;
+   border-radius: 15px;
+   color: white;
+   background-color: #ffa08a;
+}
+.second-section-div-rose {
+   display: flex;
+   flex-direction: column;
+   width: 380px;
+   height: 486px;
+   padding: 30px;
+   background-color: #f7c1a5;
+}
+.second-section-button-rose {
+   align-self: center;
+   width: 173px;
+   height: 53px;
+   border: white 3px solid;
+   border-radius: 15px;
+   color: white;
+   background-color: #f7c1a5;
+}
+
+/**********************  THIRD SECTION  *********************/
+
+#third-section {
+   display: flex;
+   background: #fcf8f7;
+   justify-content: center;
+   column-gap: 50px;
+   margin: 75px 0px 0px 0px;
+   padding: 143px 0px;
+}
+.third-section-container {
+   width: 392px;
+}
+.third-section-title {
+   font-family: "lobster", sans-serif;
+   font-size: 42px;
+   margin: 0;
+}
+.third-section-para {
+   font-family: "montserratregular", sans-serif;
+   margin-bottom: 45px;
+}
+.pright {
+   padding-right: 7px;
+}
+.third-section-img {
+   height: 339px;
+   width: 393px;
+}
+
+/************************ FOURTH SECTION **********************/
+#fourth-section {
+   background-color: #ffebdf;
+   display: flex;
+   justify-content: center;
+   margin: 0;
+}
+.fourth-section-container {
+   width: 35%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+.fourth-section-title {
+   font-family: "lobster";
+   font-size: 48px;
+   margin: 49px 0px 20px 0px;
+}
+.fourth-section-para1 {
+   font-family: "montserratbold";
+   color: #003b30;
+   font-size: 24px;
+   margin: 0px 0px 10px 0px;
+}
+.fourth-section-para2 {
+   font-family: "montserratregular";
+   color: #003b30;
+   font-size: 19px;
+}
+.fourth-section-para-icons {
+   width: 18%;
+   margin-bottom: 50px;
+}
+.fa-facebook {
+   font-size: 42px;
+   color: #ffa08a;
+}
+.fa-instagram {
+   font-size: 42px;
+   color: #ffa08a;
+   padding-left: 8px;
+}
+
+/******************** FOOTER *************************/
+footer {
+   padding: 40px 0px 3px;
+   background-color: #003a13;
+   color: white;
+}
+.footer-infos {
+   display: flex;
+   justify-content: space-around;
+}
+.footer-location {
+   font-family: "montserratregular";
+}
+.footer-labise {
+   font-family: "lobster";
+   font-size: 28px;
+   line-height: 51px;
+}
+.footer-follow {
+   display: flex;
+   flex-wrap: wrap;
+   width: 134px;
+   font-family: "lobster";
+   font-size: 24px;
+}
+.icon-design-footer {
+   padding: 0px 8px;
+}
+footer ul {
+   list-style: none;
+}
+footer h4 {
+   font-family: "lobster";
+   font-size: 24px;
+   margin: 11px 0px 21px 0px;
+}
+footer li {
+   font-family: "montserratregular";
+   font-size: 14px;
+   color: rgba(255, 255, 255, 0.38);
+   line-height: 21px;
+}
+.footer-rights-container {
+   border-top: rgba(255, 255, 255, 0.38) solid 1px;
+   width: 100%;
+   margin: 27px 0;
+}
+.footer-rights-container-para {
+   margin: 14px 0px 0px 145px;
+   font-size: 11px;
+   font-family: "montserratregular";
+}
