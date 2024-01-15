@@ -18,61 +18,60 @@
    font-weight: normal;
    font-style: normal;
 }
+body {
+   margin: 0 auto;
+}
+
 /*************************     HEADER     *************************/
 
 header {
-   position: relative;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 400px;
+}
+.header-container {
    display: flex;
+   align-items: center;
 }
-#header-img {
-   z-index: 2;
-   position: relative;
-   width: 100%;
-   height: 645px;
-}
+
 #header-title {
-   position: absolute;
-   z-index: 2;
    font-family: "lobster", sans-serif;
    font-size: 93px;
-   margin: 13px 0px 0px 34px;
+   margin: 0px 0px 0px 34px;
+   color: wheat;
 }
 #header-nav {
-   position: absolute;
-   z-index: 2;
-   right: 61px;
-   width: 34%;
-   top: 35px;
+   margin-left: auto;
+   margin-right: 19px;
 }
 #header-ul {
    display: flex;
    justify-content: space-between;
+   column-gap: 20px;
    list-style: none;
 }
 .header-links {
    font-family: "montserratregular", sans-serif;
    text-decoration: none;
    color: white;
-   font-size: 24px;
+   font-size: 22px;
    font-weight: bold;
    text-shadow: 0px -2px black;
 }
 .header-para {
-   position: absolute;
-   z-index: 2;
-   top: 196px;
-   left: 500px;
-   font-size: 79px;
+   font-size: 75px;
    font-family: "lobster";
    color: white;
    text-align: center;
    width: 449px;
+   margin: 30px auto;
+   text-shadow: 3px 2px 3px #003a13;
 }
 
 /********* FIRST SECTION  ***************/
 
 #first-section {
-   padding: 100px 88px 100px 88px;
+   margin: 90px 5px;
    display: flex;
    justify-content: space-between;
 }
@@ -86,7 +85,7 @@ header {
 .first-section-para {
    width: 646px;
    font-family: "montserratregular";
-   font-size: 25px;
+   font-size: 26px;
    color: #003a13;
 }
 .first-section-para-bold {
@@ -112,7 +111,6 @@ header {
 }
 
 /****************** SECOND SECTION ************************/
-
 #second-section {
    display: flex;
    justify-content: center;
@@ -123,7 +121,7 @@ header {
    flex-direction: column;
    width: 380px;
    height: 486px;
-   padding: 30px;
+   padding: 23px;
    background-color: #003b30;
 }
 .second-section-title {
@@ -137,8 +135,8 @@ header {
 .second-section-para {
    color: white;
    font-family: "montserratregular";
-   font-size: 17px;
-   width: 327px;
+   font-size: 19px;
+   line-height: 26px;
    height: 293px;
 }
 .second-section-button {
@@ -155,7 +153,7 @@ header {
    flex-direction: column;
    width: 380px;
    height: 486px;
-   padding: 30px;
+   padding: 23px;
    background-color: #ffa08a;
 }
 .second-section-button-orange {
@@ -172,7 +170,7 @@ header {
    flex-direction: column;
    width: 380px;
    height: 486px;
-   padding: 30px;
+   padding: 23px;
    background-color: #f7c1a5;
 }
 .second-section-button-rose {
@@ -310,4 +308,176 @@ footer li {
    margin: 14px 0px 0px 145px;
    font-size: 11px;
    font-family: "montserratregular";
+}
+@media screen and (min-width: 500px) and (max-width: 769px) {
+   #header-title {
+      font-size: 80px;
+   }
+   .header-links {
+      font-size: 19px;
+   }
+   .header-para {
+      font-size: 70px;
+   }
+   #firt-section {
+      margin: 90px 0 60px 4px;
+   }
+   #first-section img {
+      width: 54%;
+      height: 367px;
+   }
+   .first-section-title {
+      margin: 0;
+      font-size: 43px;
+      line-height: 40px;
+   }
+   .first-section-para {
+      width: auto;
+      font-size: 18px;
+   }
+   .first-section-button {
+      width: 190px;
+      height: 45px;
+      font-size: 16px;
+   }
+   .second-section-div-green {
+      padding: 10px;
+   }
+   .second-section-div-orange {
+      padding: 10px;
+   }
+   .second-section-div-rose {
+      padding: 10px;
+   }
+   .second-section-title {
+      font-size: 38px;
+      width: 235px;
+      line-height: 32px;
+   }
+   .second-section-para {
+      font-size: 15px;
+      line-height: 23px;
+   }
+}
+@media screen and (min-width: 320px) and (max-width: 490px) {
+   header {
+      height: 350px;
+   }
+   .header-container {
+      flex-direction: column-reverse;
+   }
+   #header-title {
+      font-size: 77px;
+      margin: 60px;
+      text-shadow: 2px 2px 1px black;
+   }
+   #header-nav {
+      margin: auto;
+   }
+   #header-ul {
+      padding: 0;
+      column-gap: 40px;
+   }
+   .header-links {
+      font-size: 18px;
+   }
+   .header-para {
+      display: none;
+   }
+   #first-section {
+      flex-direction: column;
+      margin: 60px auto;
+   }
+   .first-section-title {
+      text-align: center;
+      margin: 15px auto;
+   }
+
+   .first-section-para {
+      padding: 4px;
+      width: fit-content;
+      font-size: 20px;
+   }
+   .first-section-button {
+      width: 185px;
+      height: 46px;
+      font-size: 16px;
+      margin: 0 auto 30px;
+   }
+   #second-section {
+      flex-direction: column;
+   }
+   .second-section-title {
+      width: auto;
+      font-size: 35px;
+   }
+   .second-section-para {
+      padding: 5px;
+   }
+   .second-section-div-green,
+   .second-section-div-orange,
+   .second-section-div-rose {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+   }
+   #third-section {
+      margin: auto;
+      flex-direction: column;
+      padding: 70px 0;
+      text-align: center;
+   }
+   .third-section-container {
+      width: auto;
+   }
+   .third-section-img {
+      width: 100%;
+   }
+   .third-section-para {
+      padding: 5px;
+      font-size: 15px;
+   }
+   .fourth-section-container {
+      width: 100%;
+   }
+   .fourth-section-title {
+      font-size: 45px;
+   }
+   .fourth-section-para1 {
+      font-size: 21px;
+   }
+   .fourth-section-para2 {
+      font-size: 16px;
+   }
+   .fourth-section-para-icons {
+      width: 30%;
+   }
+   footer {
+      padding: 18px 0 3px;
+   }
+   .footer-labise {
+      font-size: 23px;
+   }
+   .footer-infos {
+      font-size: 23px;
+      justify-content: center;
+      align-items: baseline;
+   }
+   .footer-follow {
+      display: none;
+   }
+   .footer-location {
+      font-size: 12px;
+   }
+   footer li {
+      font-size: 12px;
+   }
+   footer h4 {
+      margin: 11px 0 8px;
+   }
+   .footer-rights-container-para {
+      font-size: 10px;
+      margin: 14px auto;
+      text-align: center;
+   }
 }
